@@ -1,6 +1,7 @@
 import NavBar from './NavBar.js'
 import Home from './Home'
 import Log from './Log'
+import Write from './Write'
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Home />
       <Log />
+      <Write />
     </div>
   );
 }
