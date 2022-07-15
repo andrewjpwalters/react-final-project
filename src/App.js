@@ -9,9 +9,17 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <Log />
-      <Write />
+      <Switch>
+        <Route exact path="/log">
+          <Log />
+        </Route>
+        <Route exact path="/write">
+          <Write />
+        </Route>
+        <Route exact path="/">
+          <Home />
+        </Route>
+      </Switch>
     </div>
   );
 }
