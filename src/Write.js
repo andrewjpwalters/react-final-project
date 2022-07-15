@@ -22,12 +22,12 @@ function Write() {
     return (
         <form onSubmit={handleSubmit}>
             <h1>Write a post:</h1>
-            <label htmlFor="title">Title</label>
             <input
                 type="text"
                 id="title"
                 value={formData.title}
                 onChange={handleChange}
+                placeholder="Write a title"
             />
             <textarea
                 id="content"
@@ -35,7 +35,7 @@ function Write() {
                 onChange={handleChange}
                 rows={10}
                 cols={30}
-                placeholder="Test"
+                placeholder="Write a post"
                 style={{ resize: "none" }}
             />
             <input type="submit" value="Post"
