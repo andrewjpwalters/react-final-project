@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from "react-router-dom";
 import NavBar from './NavBar.js'
 import Home from './Home'
-import Log from './Log'
+import Blog from './Blog'
 import Write from './Write'
 
 function App() {
@@ -10,8 +10,8 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route exact path="/log">
-          <Log />
+        <Route exact path="/blog">
+          <Blog />
         </Route>
         <Route exact path="/write">
           <Write />

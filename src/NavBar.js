@@ -11,10 +11,10 @@ function NavBar() {
                 Home
             </NavLink>
             <NavLink
-                to="/log"
+                to="/blog"
                 exact
             >
-                Log
+                Blog
             </NavLink>
             <NavLink
                 to="/write"
