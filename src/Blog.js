@@ -10,11 +10,12 @@ const post = [
 function Blog() {
 
     const blogPost = post.map((blogObj) => {
-        return <BlogPost id={blogObj.id} title={blogObj.title} content={blogObj.content} />
+        return <BlogPost key={blogObj.id} title={blogObj.title} content={blogObj.content} />
     })
     return (
         <div>
             <h1>Hello from Blog!</h1>
+            {blogPost}
         </div>
     )
 }
