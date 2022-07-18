@@ -1,8 +1,11 @@
 import React from "react";
 
-function BlogPost() {
+function BlogPost(props) {
     return (
-        <h1>A Blog post!</h1>
+        <div>
+            <h2>{props.title}</h2>
+            <p>{props.content}</p>
+        </div>
     )
 }
 
