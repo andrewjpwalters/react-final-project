@@ -1,10 +1,11 @@
 import React from "react";
 
 function BlogPost(props) {
+    const { title, content } = props
     return (
         <div>
-            <h2>{props.title}</h2>
-            <p>{props.content}</p>
+            <h2>{title}</h2>
+            <p>{content}</p>
         </div>
     )
 }
