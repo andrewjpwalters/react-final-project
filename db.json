@@ -1,24 +1,9 @@
 {
   "posts": [
     {
-      "id": 1,
       "title": "Test 1",
-      "content": "This is a test 1"
-    },
-    {
-      "id": 2,
-      "title": "Test 2",
-      "content": "This is a test 2"
-    },
-    {
-      "title": "Test 3",
-      "content": "This is test 3!",
-      "id": 3
-    },
-    {
-      "title": "It Works!!",
-      "content": "Heck yeah!",
-      "id": 4
+      "content": "This is a test!",
+      "id": 1
     }
   ]
 }

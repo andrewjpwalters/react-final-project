@@ -14,9 +14,20 @@ function Blog() {
             })
     }, []);
 
+    function deletePost(id) {
+        const updatedPosts = posts.filter(post => post.id !== id)
+        setPosts(updatedPosts)
+    }
+
     const blogPost = posts.map((blogObj) => {
-        return <BlogPost key={blogObj.id} title={blogObj.title} content={blogObj.content} />
+        return <BlogPost
+            key={blogObj.id}
+            id={blogObj.id}
+            title={blogObj.title}
+            content={blogObj.content}
+            onDeletePost={deletePost} />
     })
+
     return (
         <div>
             <h1>Hello from Blog!</h1>
