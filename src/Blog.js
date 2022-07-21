@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import BlogPost from "./BlogPost";
 
-const post = [
-    { id: 1, title: "Post 1", content: "This is post 1" },
-    { id: 2, title: "Post 2", content: "This is post 2" },
-    { id: 3, title: "Post 3", content: "This is post 3" }
-]
 
 function Blog() {
 
-    const blogPost = post.map((blogObj) => {
+    const [posts, setPosts] = useState([])
+
+    useEffect(() => {
+        fetch("http://localhost:3000/posts/")
+            .then((r) => r.json())
+            .then((data) => {
+                setPosts(data)
+            })
+    }, []);
+
+    const blogPost = posts.map((blogObj) => {
         return <BlogPost key={blogObj.id} title={blogObj.title} content={blogObj.content} />
     })
     return (
