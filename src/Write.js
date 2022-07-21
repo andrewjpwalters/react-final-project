@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 function Write() {
+    const history = useHistory();
+
     const [formData, setFormData] = useState({
         title: "",
         content: ""
@@ -17,6 +20,7 @@ function Write() {
         })
             .then(response => response.json())
             .then(data => {
+                history.push('/blog')
                 console.log('Success:', data);
             })
             .catch((error) => {
