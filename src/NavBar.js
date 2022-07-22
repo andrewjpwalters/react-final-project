@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 
 function NavBar() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" sticky="top" style={{ paddingLeft: "1rem" }}>
             <LinkContainer to="/" exact>
                 <Navbar.Brand>UnLiveJournal</Navbar.Brand>
             </LinkContainer>

@@ -9,23 +9,25 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <Container>
+    <div>
       <NavBar />
-      <Switch>
-        <Route exact path="/blog">
-          <Blog />
-        </Route>
-        <Route exact path="/write">
-          <Write />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="*">
-          <h1>404 NOT FOUND</h1>
-        </Route>
-      </Switch>
-    </Container>
+      <Container>
+        <Switch>
+          <Route exact path="/blog">
+            <Blog />
+          </Route>
+          <Route exact path="/write">
+            <Write />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <h1>404 NOT FOUND</h1>
+          </Route>
+        </Switch>
+      </Container>
+    </div>
   );
 }
 
