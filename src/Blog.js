@@ -20,7 +20,7 @@ function Blog() {
         setPosts(updatedPosts)
     }
 
-    const blogPost = posts.map((blogObj) => {
+    const blogPost = posts.slice(0).reverse().map((blogObj) => {
         return <BlogPost
             key={blogObj.id}
             id={blogObj.id}
