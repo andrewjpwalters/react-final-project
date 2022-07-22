@@ -7,13 +7,13 @@ function NavBar() {
     return (
         <Navbar bg="light" expand="lg" sticky="top" style={{ paddingLeft: "1rem" }}>
             <LinkContainer to="/" exact>
-                <Navbar.Brand>UnLiveJournal</Navbar.Brand>
+                <Navbar.Brand>YouBlog</Navbar.Brand>
             </LinkContainer>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <LinkContainer to="/blog" exact>
-                        <Nav.Link>Blog</Nav.Link>
+                        <Nav.Link>Blog Feed</Nav.Link>
                     </LinkContainer>
                     <LinkContainer to="/write">
                         <Nav.Link>Write</Nav.Link>

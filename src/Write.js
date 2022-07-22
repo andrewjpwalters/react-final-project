@@ -38,27 +38,32 @@ function Write() {
         })
     }
     return (
-        <form onSubmit={handleSubmit}>
-            <h1>Write a post:</h1>
-            <input
-                type="text"
-                id="title"
-                value={formData.title}
-                onChange={handleChange}
-                placeholder="Write a title"
-            />
-            <textarea
-                id="content"
-                value={formData.content}
-                onChange={handleChange}
-                rows={10}
-                cols={30}
-                placeholder="Write a post"
-                style={{ resize: "none" }}
-            />
-            <input type="submit" value="Post"
-            />
-        </form>
+        <>
+            <h1 className="text-center">Write Your Heart Out</h1>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <input
+                        type="text"
+                        className="form-control"
+                        id="title"
+                        value={formData.title}
+                        onChange={handleChange}
+                        placeholder="Write a title"
+                    />
+                </div>
+                <div className="form-group">
+                    <textarea
+                        className="form-control"
+                        id="content"
+                        value={formData.content}
+                        onChange={handleChange}
+                        placeholder="Write a post"
+                        style={{ height: "300px", resize: "none" }}
+                    />
+                </div>
+                <button type="submit" className="btn btn-outline-dark">Post</button>
+            </form>
+        </>
 
     )
 }
