@@ -1,4 +1,5 @@
 import React from "react";
+import { Card } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function BlogPost({ title, id, content, onDeletePost }) {
@@ -11,11 +12,11 @@ function BlogPost({ title, id, content, onDeletePost }) {
     }
 
     return (
-        <div>
-            <h2>{title}</h2>
-            <p>{content}</p>
-            <button onClick={handleDelete}>Delete Post</button>
-        </div>
+        <Card body>
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>{content}</Card.Text>
+            <button className="btn btn-outline-dark btn-sm" onClick={handleDelete}>Delete Post</button>
+        </Card>
     )
 }
 

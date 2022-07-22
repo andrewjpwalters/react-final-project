@@ -31,7 +31,7 @@ function Blog() {
 
     return (
         <div>
-            <h1>Hello from Blog!</h1>
+            <h1 className="text-center">Blog Feed</h1>
             {blogPost}
         </div>
     )
