@@ -1,13 +1,15 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import NavBar from './NavBar.js'
-import Home from './Home'
-import Blog from './Blog'
-import Write from './Write'
+import NavBar from './NavBar.js';
+import Home from './Home';
+import Blog from './Blog';
+import Write from './Write';
+import { Container } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
+    <Container>
       <NavBar />
       <Switch>
         <Route exact path="/blog">
@@ -23,7 +25,7 @@ function App() {
           <h1>404 NOT FOUND</h1>
         </Route>
       </Switch>
-    </div>
+    </Container>
   );
 }
 

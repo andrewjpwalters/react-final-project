@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function Write() {
     const history = useHistory();

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BlogPost from "./BlogPost";
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 function Blog() {
