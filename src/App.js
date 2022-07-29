@@ -4,7 +4,7 @@ import NavBar from './NavBar.js';
 import Home from './Home';
 import Blog from './Blog';
 import Write from './Write';
-import { Container } from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {

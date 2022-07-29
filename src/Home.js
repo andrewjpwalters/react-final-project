@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from 'react-bootstrap'
+import Image from 'react-bootstrap/Image'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import image from './img/patrick-fore-0gkw_9fy0eQ-unsplash.jpg'
 

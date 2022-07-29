@@ -1,5 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap"
+import Card from "react-bootstrap/Card"
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function BlogPost({ title, id, content, onDeletePost }) {
