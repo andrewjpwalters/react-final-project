@@ -8,5 +8,6 @@ On the blog feed, which can also be navigated to through the Blog Feed tab in th
 
 Thank you for checking out my project!
 
-
+Photo by Patrick Fore on Unsplash (https://unsplash.com/photos/0gkw_9fy0eQ?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink)
+  
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
