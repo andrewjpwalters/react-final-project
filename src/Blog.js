@@ -29,6 +29,7 @@ function Blog() {
             onDeletePost={deletePost} />
     })
 
+
     return (
         <div>
             <h1 className="text-center">Blog Feed</h1>
@@ -36,5 +37,6 @@ function Blog() {
         </div>
     )
 }
+
 
 export default Blog;
