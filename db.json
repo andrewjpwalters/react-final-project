@@ -11,14 +11,14 @@
       "id": 4
     },
     {
-      "title": "Hello!",
-      "content": "This is a test!",
-      "id": 5
-    },
-    {
       "title": "Here is another test",
       "content": "This is a test with medium length content! You can see how this will be added to the blog feed once I hit \"Post!\"",
       "id": 7
+    },
+    {
+      "title": "Hello!",
+      "content": "This is a test!",
+      "id": 8
     }
   ]
 }
